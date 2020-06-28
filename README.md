@@ -25,10 +25,7 @@ Users have reported that the app hangs or crashes at the login and payment page.
 
 ### Background
 
-<img src="./images/ecommerce_market_size.png" width="400" align="left">
-Source: Google, Temasek, Bain & Company e-Conomy SEA 2019
-
-According to research done by [Google, Temasek and Bain](https://www.thinkwithgoogle.com/intl/en-apac/tools-resources/research-studies/e-conomy-sea-2019-swipe-up-and-to-the-right-southeast-asias-100-billion-internet-economy/), Singapore's e-commerce market was worthed US\\$2 billion in 2019, and is expected to grow 3.5 times to reach US\\$7 billion by 2025. High mobile penetration and fast internet connectivity, will be the key drivers of e-commerce growth. Furthermore, as consumers were encouraged to stay home as a result of COVID-19, many have started to grow accustomed to shopping online. This may just be the start of a new norm in consumer behaviour, where more start to shift from offline to online shopping.
+According to research done by [Google, Temasek and Bain](https://www.thinkwithgoogle.com/intl/en-apac/tools-resources/research-studies/e-conomy-sea-2019-swipe-up-and-to-the-right-southeast-asias-100-billion-internet-economy/), Singapore's e-commerce market was worthed US$2 billion in 2019, and is expected to grow 3.5 times to reach US$7 billion by 2025. High mobile penetration and fast internet connectivity, will be the key drivers of e-commerce growth. Furthermore, as consumers were encouraged to stay home as a result of COVID-19, many have started to grow accustomed to shopping online. This may just be the start of a new norm in consumer behaviour, where more start to shift from offline to online shopping.
 
 While e-commerce presents huge opportunities, competition has been on the rise, with the key players being Lazada, Shopee and Qoo10. In efforts to build customer engagement and grow their share of wallet, competitors have improved the checkout experience, introduced gamification and overcame the challenges of last-mile delivery. Given stiff competition, it is crucial that Shopee continues to delight customers and address pain points in the online shopping experience. The sentiment analysis tool will enable Shopee's product managers to classify user sentiment accurately and understand the pain points.
 
