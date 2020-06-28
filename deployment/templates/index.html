@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analysis Tool</title>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+  background: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 350px;
+    border: 3px solid #FF3B12;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #FF3B12;
+    font-family: 'Roboto', sans-serif;
+    border-right: none;
+}
+
+.searchTerm:focus{
+    color: black;
+}
+
+.searchButton {
+  width: 100px;
+  height: 41px;
+  border: 1px solid #FF3B12;
+  background: #FF3B12;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.prediction {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #4F4D4D;
+}
+
+.github {
+    color:#4F4D4D;
+    font-size: 14px;
+    position: fixed;
+  left: 47%;
+  bottom: 2%;
+  width: 100%;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF3B12;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* selected link */
+a:active {
+  color: darkorange;
+    text-decoration: none;
+}
+
+a:visit {
+    color: black;
+    text-decoration: none;
+    }
+
+    #icon{
+        width: 15px;
+        margin-right: 5px;
+    }
+
+
+
+    </style>
+
+</head>
+
+<body>
+         <div class="wrap">
+   <div class="search">
+ <div class="login">
+	<div class="header">Write a Review on Shopee</div>
+
+     <!-- Main Input For Receiving Query to our model -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" class="searchTerm" name="review" placeholder="Review" required="required" />
+
+        <button type="submit" class="searchButton">Predict my sentiment!</button>
+    </form>
+
+
+   </div>
+</div>
+
+<div class="prediction">{{ prediction_text }}</div>
+
+
+
+       </div>
+
+<div class="github"><a href="https://github.com/gracechia/Sentiment-Analysis-for-Shopee"><img src="../static/GitHub-Mark-32px.png" id=icon>Grace Chia</a></div>
+
+
+
+</body>
+</html>
